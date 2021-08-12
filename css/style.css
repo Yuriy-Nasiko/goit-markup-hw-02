@@ -1,105 +1,216 @@
-:root{
+:root {
   --page-text: #212121;
   --primary-text-color: #757575;
   --secondary-text-color: #2196f3;
-  --auxiliary-text-color:#FFFFFF;
-  --background-text-color: #2196f3;
-
-}
-
-body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  background: #fff;
-  color: #212121;
-
-}
-
-/* Шапка */
-
-/* Логотип */
-
-
-.logo {
-  font-family: Raleway;
-  text-decoration: none;
-}
-
-.logo-web {
-  color: #2196f3;
-}
-
-.logo-studio {
-  color: #000000;
-}
-
-/* подвал web studio */
-
-.list .logo-studio {
-  color: #ffffff;
-}
-
-/* Главная навигация */
-
-.list {
-  list-style: none;
-  text-decoration: none;
-}
-
-.site-nav {
-  color: #2196f3;
-}
-
-.link {
-  color: #212121;
-  text-decoration: none;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-  transition-duration: 0.4s;
-}
-
-/* Связь */
-
-.nav-mail, .nav-tel {
-  color: #757575;
-  text-decoration: none;
-}
- 
-.nav-mail:hover,
-.nav-mail:focus,
-.nav-tel:hover,
-.nav-tel:focus {
-  color: #2196f3;
-}
-/* Портфолио */
-
-h1 { /* скрыть текст */ }
-
-.button {
-  color: var(--page-text);
-  border: 1px solid transparent;
-  background-color: #F5F4FA ;
-  border-radius: 4px;
-}
-.button:hover, .button:focus {
-  color: #FFFFFF;
-  background-color: var(--background-text-color);
+  --third-text-color: #ffffff;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
 }
 /* основной цвет фона #ffffff */
 
 /* вспомогательный цвет фона #F5F4FA */
 
-/* цвет георой и футер #2F303A */ 
+/* цвет георой и футер #2F303A */
 
-/* primary-text-color #212121 */основной цвет текста
+/* page-text основной цвет текста #212121 */
 
-/* secondary-text-color #757575 */ второй основной цвет текста
+/* primary-text-color второй основной цвет текста #757575 */
 
-/* вспомогательный цвет текста #2196F3 */
+/* secondary-text-color вспомогательный цвет текста #2196F3 */
 
-/* вспомогательный цвет текста #FFFFFF */
+/* third-text-color #FFFFFF */
 
-/* цвт почты футер #FFFFFF 60% */ ;
+/* цвт почты футер #FFFFFF 60% */
+/* пр Ховере кноака #188CE8 */
+
+body {
+  font-family: Roboto;
+  background: var(--primary-background-color);
+  color: var(--page-text);
+  width: 1600px;
+}
+
+/* Шапка */
+/* Логотип */
+
+.header {
+  width: 1600px;
+  height: 80px;
+}
+.logo {
+  font-family: Raleway;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--secondary-text-color);
+}
+.logo-studio {
+  color: #000000;
+}
+.logo-studio-footer {
+  color: var(third-text-color);
+} /* подвал webstudio */
+
+/* Главная навигация */
+
+/* .navigation-list {
+} */
+.list {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+.navigation-link {
+  color: var(--page-text);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--secondary-text-color);
+}
+
+/* Связь */
+
+.navigation-connect {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.navigation-connect:hover,
+.navigation-connect:focus {
+  color: var(--secondary-text-color);
+}
+.hr {
+  color: #ececec;
+  width: 1600px;
+}
+/* Портфолио */
+
+/* скрыть текст */
+
+.portfolio {
+  width: 1170px;
+  height: 1360px;
+  padding-top: 94px;
+}
+.filtre {
+  list-style: none;
+  /* text-decoration: none; */
+  font-style: normal;
+  display: inline;
+  width: 611px;
+  height: 38px;
+}
+
+.filtre-list {
+  color: var(--page-text);
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filtre-list:hover,
+.filtre-list:focus {
+  color: var(--third-text-color);
+  border: 1px solid transparent;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+
+/* Портфолио-Все */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.content-list {
+  flex: 25%;
+  max-width: 25%;
+  padding: 30px;
+}
+.caption {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.subtitle {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+/* Подвал */
+.footer {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+}
+.address {
+  width: 231px;
+  height: 81px;
+}
+.navigation {
+  color: var(--third-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 60px;
+}
+.address .navigation-connect {
+  color: rgb(255, 255, 255, 0.6);
+  display: flex;
+  flex-wrap: nowrap;
+}
+.navigation:hover,
+.navigation:focus {
+  color: var(--secondary-text-color);
+}
+.list > .navigation-connect:hover,
+.list > .navigation-connect:focus {
+  --secondary-text-color: --third-text-color;
+}
+
+/* Блок герой */
+
+.hero-text {
+  color: var(--auxiliary-text-color);
+}
+.button {
+  color: var(--auxiliary-text-color);
+  background-color: var(--secondary-text-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #188ce8;
+}
