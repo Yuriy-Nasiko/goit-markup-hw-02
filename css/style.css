@@ -10,7 +10,7 @@
 
 /* вспомогательный цвет фона #F5F4FA */
 
-/* цвет георой и футер #2F303A */
+/* цвет герой и футер #2F303A */
 
 /* page-text основной цвет текста #212121 */
 
@@ -24,54 +24,54 @@
 /* пр Ховере кноака #188CE8 */
 
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   background: var(--primary-background-color);
   color: var(--page-text);
   width: 1600px;
 }
 
-/* Шапка */
+/* ----------------Шапка--------------- */
+
 /* Логотип */
 
 .header {
   width: 1600px;
   height: 80px;
 }
+
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   letter-spacing: 0.03em;
 }
+
 .logo-web {
   color: var(--secondary-text-color);
 }
+
 .logo-studio {
   color: #000000;
 }
-.logo-studio-footer {
-  color: var(third-text-color);
-} /* подвал webstudio */
 
-/* Главная навигация */
+/* ------Главная навигация------- */
 
-/* .navigation-list {
-} */
+/* .navigation-list */
+
 .list {
   list-style: none;
   text-decoration: none;
   font-style: normal;
 }
+
 .navigation-link {
   color: var(--page-text);
   text-decoration: none;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .navigation-link:hover,
@@ -79,15 +79,18 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* Связь */
+/* --------Связь------- */
+
+.connection {
+  display: inline;
+}
 
 .navigation-connect {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .navigation-connect:hover,
@@ -98,7 +101,7 @@ body {
   color: #ececec;
   width: 1600px;
 }
-/* Портфолио */
+/* --------------Портфолио------------ */
 
 /* скрыть текст */
 
@@ -109,8 +112,6 @@ body {
 }
 .filtre {
   list-style: none;
-  /* text-decoration: none; */
-  font-style: normal;
   display: inline;
   width: 611px;
   height: 38px;
@@ -166,44 +167,72 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Подвал */
+/* ------------------Подвал ----------------*/
+
 .footer {
   background-color: #2f303a;
   width: 1600px;
   height: 252px;
 }
+
+/* Логотип */
+
+.logo-studio-footer {
+  color: #ffffff;
+}
+
+/* Блок адресс */
+
 .address {
   width: 231px;
   height: 81px;
-}
-.navigation {
-  color: var(--third-text-color);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  margin-top: 60px;
-}
-.address .navigation-connect {
-  color: rgb(255, 255, 255, 0.6);
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
 }
-.navigation:hover,
-.navigation:focus {
+
+.footer-navigation {
+  color: var(--third-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-navigation:hover,
+.footer-navigation:focus {
   color: var(--secondary-text-color);
 }
-.list > .navigation-connect:hover,
-.list > .navigation-connect:focus {
-  --secondary-text-color: --third-text-color;
+
+.footer-navigation-connect {
+  color: rgb(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-/* Блок герой */
+.footer-navigation-connect:hover,
+.footer-navigation-connect:focus {
+  color: var(--secondary-text-color);
+}
 
+/* --------------Блок герой--------------- */
+
+.hero {
+  margin-top: 80px;
+}
 .hero-text {
-  color: var(--auxiliary-text-color);
+  color: var(--third-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-top: 0px;
 }
+
 .button {
-  color: var(--auxiliary-text-color);
+  color: var(--third-text-color);
   background-color: var(--secondary-text-color);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -213,4 +242,84 @@ body {
 .button:focus,
 .button:active {
   background-color: #188ce8;
+}
+
+/* Особенности */
+
+.item {
+  /* width: 1170px;
+  height: 101px; */
+}
+
+.item-list {
+  width: 270px;
+  height: 101px;
+}
+
+.headline {
+  color: var(--page-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 270px;
+  height: 75px;
+}
+
+/* Чем мы занимаемся */
+
+.doing {
+  /* width: 1170px;
+  height: 386px; */
+}
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.heading-list {
+  /* ????? */
+}
+
+/* Наша команда */
+
+.command {
+}
+.command-heading {
+  color: var(--page-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.command-list {
+}
+.command-name {
+  color: var(--page-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.commands-position {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
