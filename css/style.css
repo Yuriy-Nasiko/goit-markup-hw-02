@@ -11,18 +11,13 @@ body {
   font-family: Roboto, sans-serif;
   background: var(--primary-background-color);
   color: var(--page-text);
-  width: 1600px;
 }
 
 /* ----------------Шапка--------------- */
 
 /* Логотип */
 
-.header {
-  width: 1600px;
-  height: 80px;
-}
-
+/* .header {} */
 /* .nav {} */
 
 .logo {
@@ -32,8 +27,6 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  width: 145px;
-  height: 31px;
 }
 
 .logo-web {
@@ -46,10 +39,7 @@ body {
 
 /* ------Главная навигация------- */
 
-.navigation-list {
-  width: 294px;
-  height: 16px;
-}
+/* .navigation-list {} */
 
 .list {
   list-style: none;
@@ -94,20 +84,14 @@ body {
 
 /* --------------Портфолио------------ */
 
-/* скрыть текст */
+/* .portfolio {} */
 
-.portfolio {
-  width: 1170px;
-  height: 1360px;
-}
 .hidden {
-  display: none;
+  display: none; /* скрытый текст Портфолио */
 }
 
 .filtre {
   list-style: none;
-  width: 611px;
-  height: 38px;
 }
 
 .filtre-list {
@@ -116,12 +100,12 @@ body {
   border: 1px solid transparent;
   background-color: #f5f4fa;
   border-radius: 4px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .filtre-list:hover,
@@ -136,7 +120,8 @@ body {
 /* .content-list {} */
 
 .caption {
-  font-style: normal;
+  color: var(--page-text);
+  text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -144,8 +129,6 @@ body {
 }
 .subtitle {
   color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -155,8 +138,6 @@ body {
 
 .footer {
   background-color: #2f303a;
-  width: 1600px;
-  height: 252px;
 }
 
 /* Логотип */
@@ -167,14 +148,10 @@ body {
 
 /* Блок адресс */
 
-.address {
-  width: 231px;
-  height: 81px;
-}
+/* .address {} */
 
 .footer-navigation {
   color: var(--third-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -187,7 +164,6 @@ body {
 
 .footer-navigation-connect {
   color: rgb(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -200,9 +176,8 @@ body {
 
 /* --------------Блок герой--------------- */
 
-.hero {
-  margin-top: 80px;
-}
+/* .hero {} */
+
 .hero-text {
   color: var(--third-text-color);
   font-weight: 900;
@@ -218,8 +193,9 @@ body {
   background-color: var(--secondary-text-color);
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 32px;
+  cursor: pointer;
 }
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -228,15 +204,9 @@ body {
 
 /* Особенности */
 
-.item {
-  width: 1170px;
-  height: 101px;
-}
+/* .item {} */
 
-.item-list {
-  width: 270px;
-  height: 101px;
-}
+/* .item-list {} */
 
 .headline {
   color: var(--page-text);
@@ -249,20 +219,14 @@ body {
 
 .text {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
-  height: 75px;
 }
 
 /* Чем мы занимаемся */
 
-.doing {
-  width: 1170px;
-  height: 386px;
-}
+/* .doing {} */
 
 .heading {
   font-weight: 700;
@@ -299,7 +263,6 @@ body {
 }
 .commands-position {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
