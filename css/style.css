@@ -38,6 +38,9 @@ body {
   width: 1600px;
   height: 80px;
 }
+.nav {
+  display: flex;
+}
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -46,6 +49,8 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  width: 145px;
+  height: 31px;
 }
 
 .logo-web {
@@ -58,7 +63,11 @@ body {
 
 /* ------Главная навигация------- */
 
-/* .navigation-list */
+.navigation-list {
+  width: 294px;
+  height: 16px;
+  display: flex;
+}
 
 .list {
   list-style: none;
@@ -82,7 +91,7 @@ body {
 /* --------Связь------- */
 
 .connection {
-  display: inline;
+  display: flex;
 }
 
 .navigation-connect {
@@ -93,6 +102,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .navigation-connect:hover,
 .navigation-connect:focus {
   color: var(--secondary-text-color);
@@ -144,12 +154,17 @@ body {
 .content {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 0;
 }
 .content-list {
   flex: 25%;
   max-width: 25%;
-  padding: 30px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-basis: calc((100% - 30px) / 3);
 }
 .caption {
   font-style: normal;
@@ -247,9 +262,9 @@ body {
 /* Особенности */
 
 .item {
-  /* width: 1170px;
-  height: 101px; */
-}
+  width: 1170px;
+  height: 101px;
+ }
 
 .item-list {
   width: 270px;
