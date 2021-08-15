@@ -55,6 +55,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.nav {
+  color: var(--secondary-text-color);
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--secondary-text-color);
