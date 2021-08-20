@@ -15,11 +15,34 @@ body {
   font-style: normal;
 }
 
+.container {
+  width: 1200;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 /* ----------------Шапка--------------- */
 
 /* ---Логотип--- */
 
 /* .header {} */
+.nav .container {
+  display: flex;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -40,7 +63,11 @@ body {
 
 /* ---Навигация--- */
 
-/* .navigation-list {} */
+.navigation-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .list {
   list-style: none;
@@ -55,10 +82,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 .nav {
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+}
+.connect-flex {
+  display: flex;
 }
 
 .navigation-link:hover,
@@ -67,6 +100,11 @@ body {
 }
 
 /* ---Связь--- */
+
+.nav-connect {
+  display: flex;
+  align-items: center;
+}
 
 /* .connection {} */
 
@@ -77,6 +115,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 
 .navigation-connect:hover,
@@ -114,8 +153,15 @@ body {
 
 /* ---------------Особенности----------- */
 
-.hidden {
-  display: none; /* скрытый текст Портфолио */
+.visually-hidden {
+  position: absolute; /* скрытый текст Портфолио */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 /* .item {} */
