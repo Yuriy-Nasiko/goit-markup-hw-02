@@ -34,20 +34,33 @@ ul {
 
 /* ---Логотип--- */
 
-/* .header {} */
+.header {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  background-color: var(--primary-background-color);
+}
 
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
+
+/* ---Контейнер--- */
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-  margin-right: auto;
-  margin-left: auto;
+.logo-thumb {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .logo {
@@ -57,9 +70,6 @@ ul {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-
-  display: block;
-  margin-right: 93px;
 }
 
 .logo-web {
@@ -79,13 +89,17 @@ ul {
 
 .navigation-list {
   display: flex;
+  padding: 0;
 }
+
+/* Сброс стилей */
 
 .list {
   list-style: none;
   text-decoration: none;
   font-style: normal;
 }
+
 .navigation-list .navigation-li:not(:last-child) {
   margin-right: 50px;
 }
@@ -116,6 +130,7 @@ ul {
 .connection {
   display: flex;
   margin-left: auto;
+  padding: 0;
 }
 
 .connection-li + .connection-li {
@@ -141,19 +156,27 @@ ul {
 
 /* --------------Блок герой--------------- */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section-hero {
+.hero-section {
   text-align: center;
+  padding-bottom: 94px;
 }
 
 .hero {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  background-color: #2f303a;
 }
 
 .hero-image {
   display: block;
+}
+
+.hero-content {
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -165,9 +188,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  display: block;
   margin-bottom: 30px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
+  display: inline-block;
+  padding: 0 46px;
 }
 
 .button {
@@ -178,9 +202,11 @@ ul {
   cursor: pointer;
   height: 50px;
   min-width: 200px;
+  text-align: center;
 
-  display: block;
   padding: 10px 32px;
+  display: block;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -191,8 +217,10 @@ ul {
 
 /* ---------------Особенности----------- */
 
+/* скрытый текст Особенности */
+
 .visually-hidden {
-  position: absolute; /* скрытый текст Портфолио */
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -202,12 +230,21 @@ ul {
   clip: rect(0 0 0 0);
 }
 
-.item {
-  display: flex;
+.feature-section {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 94px;
+  background-color: var(--primary-background-color);
 }
 
-.item-list {
-  width: 270px;
+.item {
+  display: flex;
+  padding: 0;
+}
+
+.item-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .headline {
@@ -217,11 +254,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
-}
 
-.headline:not(last-child) {
-  margin-right: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .text {
@@ -229,13 +264,21 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  display: inline-block;
 }
 
 /* -------------Чем мы занимаемся----------- */
+.occupation-section {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--primary-background-color);
+}
 
-/* .doing {} */
-.common-container {
-  display: flex;
+.occupation {
+  /* outline: 1px solid tomato; */
+  padding-bottom: 94px;
 }
 
 .heading {
@@ -244,27 +287,42 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
   display: block;
   margin-bottom: 50px;
-  text-align: start;
 }
 
 .heading-list {
   display: flex;
+  padding: 0;
 }
 
 .heading-li {
-  display: inline-block;
+  display: block;
 }
 
-.heading-li:not(last-child) {
+.heading-li:not(:last-child) {
   margin-right: 30px;
+}
+
+.occupation-image {
+  display: block;
+  max-width: 100%;
 }
 
 /* ---------------Наша команда-------------- */
 
-.command {
+.command-section {
   background-color: var(--secondary-background-color);
+  /* outline: 1px solid rgb(35, 180, 16); */
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.command {
+  padding: 94px 0;
+  margin: 0 auto;
 }
 
 .command-heading {
@@ -282,6 +340,7 @@ ul {
 .command-item {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .command-list {
@@ -289,14 +348,16 @@ ul {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-background-color);
 }
 
-.command-list:not(last-child) {
+.command-list:not(:last-child) {
   margin-right: 30px;
 }
 
-.command-img {
+.command-image {
   display: block;
+  max-width: 100%;
   margin-bottom: 30px;
 }
 
@@ -316,37 +377,32 @@ ul {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 8px;
 }
 
 /* --------------Портфолио------------ */
 
 .portfolio {
-  /* margin-top: 94px; */
-  background-color: rgb(223, 214, 231);
-}
-
-.porto-box {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  /* background-color: rgb(235, 219, 219); */
-
-  margin-left: auto;
+  width: 1600px;
   margin-right: auto;
+  margin-left: auto;
+  background-color: var(--primary-background-color);
+
+  outline: 1px solid teal;
 }
 
 .filter-block {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-bottom: 20px; */
+
+  outline: 1px solid teal;
+  padding-top: 94px;
 }
 
 .filtre {
   display: flex;
-  justify-content: center;
+  padding: 0;
+  /* justify-content: center; */
 }
 
 .filtre-btn:not(:last-child) {
@@ -432,14 +488,17 @@ ul {
 /* ---------------Подвал -------------*/
 
 .footer {
+  width: 1600px;
   background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---Логотип--- */
 
-.logo .logo-footer {
+.logo-footer {
   display: block;
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -465,8 +524,7 @@ ul {
 .footer-navigation:focus {
   color: var(--secondary-text-color);
 }
-
-.footer-navigation-connect {
+.footer-connect {
   color: rgb(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -476,7 +534,16 @@ ul {
   margin-bottom: 9px;
 }
 
-.footer-navigation-connect:hover,
-.footer-navigation-connect:focus {
+.footer-connect:hover,
+.footer-connect:focus {
   color: var(--secondary-text-color);
+}
+
+.tel {
+  padding-bottom: 60px;
+  padding-right: 0;
+  margin-right: 0;
+}
+.footer-group {
+  /* flex-direction: column; */
 }
